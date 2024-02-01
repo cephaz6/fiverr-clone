@@ -4,6 +4,13 @@
   align-items: center;
   background-color: #013914;
   color: white;
+  transition: 0.5s all ease;
+  position: sticky;
+  top: 0;
+  &.active {
+    background-color: white;
+    color: black;
+  }
 
   .container {
     width: 1400px;
@@ -26,6 +33,37 @@
       align-items: center;
       font-weight: 500;
       font-family: "Montserrat", sans-serif;
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        position: relative;
+
+        img {
+          width: 32px;
+          height: 32px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        .options {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          padding: 20px;
+          width: 150px;
+          font-weight: 400;
+          background-color: white;
+          border-radius: 10px;
+          display: flex;
+          border: 1px solid lightgray;
+          flex-direction: column;
+          gap: 10px;
+          color: rgb(150, 150, 150);
+        }
+      }
       span {
       }
       button {
