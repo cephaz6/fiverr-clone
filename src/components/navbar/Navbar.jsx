@@ -86,35 +86,40 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      {active ||
-        (pathname !== "/" && (
-          <>
-            <hr />
-            <div className="menu">
-              <Link className="link" to="/">
-                Software Development
-              </Link>
-              <Link className="link" to="/">
-                AI Services
-              </Link>
-              <Link className="link" to="/">
-                Project Design
-              </Link>
-              <Link className="link" to="/">
-                Animation
-              </Link>
-              <Link className="link" to="/">
-                DevOps
-              </Link>
-              <Link className="link" to="/">
-                Project Management
-              </Link>
-              <Link className="link" to="/">
-                Writing & Translation
-              </Link>
-            </div>
-          </>
-        ))}
+      {(active || pathname !== "/") && (
+        <>
+          <hr />
+          <div className="menu">
+            <Link className="link" to="/">
+              Software Development
+            </Link>
+            <Link className="link" to="/">
+              AI Services
+            </Link>
+            <Link className="link" to="/">
+              Project Design
+            </Link>
+            <Link className="link" to="/">
+              Video Animation
+            </Link>
+            <Link className="link" to="/">
+              DevOps & Pipelines
+            </Link>
+            <Link className="link" to="/">
+              Project Management
+            </Link>
+            <Link className="link" to="/">
+              Writing & Translation
+            </Link>
+            <Link className="link" to="/">
+              Gaming
+            </Link>
+            <Link className="link" to="/">
+              Lifestyle
+            </Link>
+          </div>
+        </>
+      )}
     </div>
   );
 };
