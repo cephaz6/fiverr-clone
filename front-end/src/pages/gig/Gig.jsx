@@ -7,7 +7,7 @@ const Gig = () => {
     <div className="gig">
       <div className="container">
         <div className="left">
-          <span className="breadCrumbs">Cephaz > Wordpress Design</span>
+          <span className="breadCrumbs">Cephaz - Wordpress Design</span>
           <h1>I Will Create AI Generated Art For You</h1>
 
           <div className="user">
